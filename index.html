@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLinBrowser</title>
+</head>
+<body>
+    <h3 style="font-family:Arial, Helvetica, sans-serif;" align="center">Open url in selected browser:</h3>
+    <hr>
+    
+    <form method="POST" action="/open" align="center">
+        <label for="browser">Choose a browser:</label>
+        <select name="browser">
+            <option value="chrome">Google Chrome</option>
+            <option value="edge">Microsoft Edge</option>
+            <option value="firefox">Mozilla Firefox</option>
+        </select>
+        <br> <br>
+        <label for="url">Enter url:</label>
+            <input type="url" name="url">
+        <br><br>
+            <input type="submit" value="Open URL">
+    </form>
+
+</body>
+</html>
